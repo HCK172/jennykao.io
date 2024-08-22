@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -15,45 +15,74 @@
 
   <body>
     <div class="container">
-      <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Work Experience</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Me</a></li>
-          </ul>
-        </nav>
-      </header>
+      <!-- desktop navigation -->
+      <nav id="desktop-nav">
+        <ul class="nav-link">
+          <li><a href="#">About </a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
 
-      <section>
-        <div class="sliding-text">
-          <h1>Hi There! <span class="wave">👋</span></h1>
-          <h1>I'm Jenny Kao</h1>
-          <p>
-            A data gal based in Colorado with my border collie Enjoys sipping on
-            coffee a thinking about data
+      <section id="hero">
+        <div class="section__text">
+          <h1 class="title-0">Hi There! <span id="wave">👋</span></h1>
+          <h1 class="title">I'm Jenny Kao</h1>
+          <p class="section__text__p1">
+            Asparagus aubergine azuki beet bell bitterleaf bunya cabbage caulie
+            cauliflower celery corn daikon eggplant Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Quis labore delectus perferendis rerum
+            suscipit, eveniet aut culpa autem soluta numquam expedita. Et
           </p>
+
+          <div class="section_btn-socials">
+            <div class="btn-container">
+              <button
+                class="btn-main"
+                onclick="window.open('./assets/resume.pdf')"
+              >
+                Download CV
+              </button>
+              <button class="btn-main" onclick="location.href('./#contact')">
+                contact me
+              </button>
+            </div>
+
+            <div id="socials-container">
+              <a
+                href="https://www.linkedin.com/in/jennyhaochenkao/"
+                target="_blank"
+              >
+                <img
+                  src="./img/linkedin.png"
+                  alt="my linkedin profile"
+                  class="linkedin-icon"
+                />
+              </a>
+              <a href="https://github.com/HCK172" target="_blank">
+                <img
+                  src="./img/github.png"
+                  alt="my github profile"
+                  class="github-icon"
+                />
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="btn">
-          <button class="btn-main">contact me</button>
-          <button class="btn-main">My Portfolio</button>
-        </div>
-
-        <div class="headshot">
+        <div class="section__pic-container">
           <img
-            src="img/masterphoto.JPG"
-            width="200px"
-            height="200px"
+            src="./img/headshot-3.jpg"
             alt="headshot"
+            width="375px"
+            height="auto"
           />
         </div>
       </section>
-      <footer>
-        <p>Copyright &copy; 2024 Powered by matcha latte ☕️</p>
-      </footer>
+
+      <section class="about"></section>
     </div>
   </body>
 </html>
