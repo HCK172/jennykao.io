@@ -1,0 +1,233 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #b3ca89;
+  font-size: 18px;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+/* Desktop Nav*/
+
+#desktop-nav {
+  border-bottom: 3px double #000;
+}
+nav,
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 45px;
+  height: 80px;
+  list-style: none;
+  font-weight: 500;
+}
+
+a:link,
+a:visited {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover,
+a:active {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* HERO SECTION: text + profile pic */
+
+#hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding-top: 4vh;
+  height: 96vh;
+  min-height: fit-content;
+  margin-bottom: 1rem;
+}
+
+.section__hero_text {
+  grid-column: 1/3;
+  font-family: "DM Mono", sans-serif;
+  padding: 150px 100px 150px 50px;
+}
+
+.setion__pic-container {
+  grid-column: 3/4;
+}
+
+.shape-wrapper {
+  background-image: url("./img/marimeko.jpg");
+  width: 400px;
+  height: 500px;
+  border-radius: 100px;
+  margin-top: 30px;
+  transform: rotate(10deg);
+}
+
+.profile_pic {
+  margin-top: 50px;
+  margin-right: 50px;
+  border-radius: 100px;
+  transform: rotate(-5deg);
+  box-shadow: 10px 10px 10px #000;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  display: grid;
+  height: 50vh;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.section__about_pic {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: darkcyan;
+}
+
+.section__about__text {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #a4a4ff;
+}
+
+.section__about__skills {
+  background-color: yellow;
+}
+
+.section__project {
+  background-color: aquamarine;
+  height: 50vh;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-p1 {
+  background-color: darkseagreen;
+}
+.card-p2 {
+  background-color: green;
+}
+.card-p3 {
+  background-color: violet;
+}
+.card-p4 {
+  background-color: green;
+}
+.card-p5 {
+  background-color: darkseagreen;
+}
+
+/* BUTTON + SOCIALS */
+
+.section_btn-socials {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* BUTTON  */
+.btn-main {
+  font-weight: bold;
+  border: 3px solid black;
+  line-height: 1.5;
+  padding: 10px 15px;
+  margin-right: 1.5rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: #a4a4ff;
+}
+
+.btn-main:hover {
+  background-color: rgb(113, 222, 244);
+  transition: 0.3s;
+  transform: scale(1.2) rotate(-4deg);
+  cursor: pointer;
+}
+
+/* SOCIALS ICON */
+
+.icon {
+  background-color: white;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+/* ELEMENT - HERO */
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: -0.022rem;
+  text-transform: lowercase;
+}
+
+.header-text {
+  margin-top: 2rem;
+}
+
+#wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+p {
+  line-height: 1.5;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.icon {
+  border-radius: 100px;
+}
+
+.footer {
+  background-color: aquamarine;
+}

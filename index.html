@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -27,14 +27,15 @@
       </nav>
 
       <section id="hero">
-        <div class="section__text">
-          <h1 class="title-0">Hi There! <span id="wave">👋</span></h1>
-          <h1 class="title">I'm Jenny Kao</h1>
-          <p class="section__text__p1">
+        <div class="section__hero_text">
+          <h1>
+            Hi There! <span id="wave">👋</span><br />
+            I'm Jenny Kao
+          </h1>
+
+          <p class="header-text">
             Asparagus aubergine azuki beet bell bitterleaf bunya cabbage caulie
             cauliflower celery corn daikon eggplant Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quis labore delectus perferendis rerum
-            suscipit, eveniet aut culpa autem soluta numquam expedita. Et
           </p>
 
           <div class="section_btn-socials">
@@ -46,7 +47,7 @@
                 Download CV
               </button>
               <button class="btn-main" onclick="location.href('./#contact')">
-                contact me
+                Let's Connect
               </button>
             </div>
 
@@ -58,14 +59,14 @@
                 <img
                   src="./img/linkedin.png"
                   alt="my linkedin profile"
-                  class="linkedin-icon"
+                  class="icon"
                 />
               </a>
               <a href="https://github.com/HCK172" target="_blank">
                 <img
                   src="./img/github.png"
                   alt="my github profile"
-                  class="github-icon"
+                  class="icon"
                 />
               </a>
             </div>
@@ -73,16 +74,54 @@
         </div>
 
         <div class="section__pic-container">
-          <img
-            src="./img/headshot-3.jpg"
-            alt="headshot"
-            width="375px"
-            height="auto"
-          />
+          <div class="shape-wrapper">
+            <img
+              class="profile_pic"
+              src="./img/headshot-3.jpg"
+              alt="headshot"
+              width="375px"
+              height="auto"
+            />
+          </div>
         </div>
       </section>
 
-      <section class="about"></section>
+      <section class="about">
+        <div class="section__about_pic">
+          <img
+            class="about_pic"
+            src="./img/about-laptop.jpg"
+            alt="About Me image"
+            width="300px"
+            height="auto"
+          />
+        </div>
+        <div class="section__about__text">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            tempora est odio fuga alias! Ducimus illo nesciunt alias ad in
+            beatae laborum tempora consequuntur sapiente sed! Ullam et unde
+            veniam?
+          </p>
+        </div>
+        <div class="section__about__skills">
+          <div>
+            <h3>Tech Stack</h3>
+          </div>
+        </div>
+      </section>
+      <section class="section__project">
+        <h2>Project</h2>
+        <div class="project-container">
+          <div class="card-p1">p1</div>
+          <div class="card-p2">p2</div>
+          <div class="card-p3">p3</div>
+          <div class="card-p4">p4</div>
+          <div class="card-p5">p5</div>
+        </div>
+      </section>
+      <section class="footer"></section>
     </div>
   </body>
 </html>
